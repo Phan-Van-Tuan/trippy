@@ -1,0 +1,6 @@
+<!-- something -->
+<div class="post-cmt-rating-score">
+    <fa-icon class="text-lg" [icon]="faStar" *ngFor="let star of stars; let i = index" 
+    (mouseenter)="hoverStar(i)" (mouseleave)="resetHoveredStar()" (click)="selectStar(i)"
+    [ngClass]="i <= hoveredStar || i <= selectedStar?'text-primary':''"></fa-icon>
+</div>

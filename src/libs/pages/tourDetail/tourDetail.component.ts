@@ -7,6 +7,8 @@ import {
   faUsers,
   faCheck,
   faClose,
+  faStar,
+  faArrowLeft,
   faLocationDot,
 } from '@fortawesome/free-solid-svg-icons';
 

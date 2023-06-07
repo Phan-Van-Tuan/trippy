@@ -8,117 +8,117 @@
       </span>
     </div>
     <div class="h-500px mt-10">
-      <nz-carousel nzEnableSwipe nzAutoPlay [nzEffect]="'fade'">
+  <nz-carousel nzEnableSwipe nzAutoPlay [nzEffect]="'fade'">
         <div nz-carousel-content *ngFor="let preview of tour.overview">
           <img class="w-full h-full object-cover" [src]="preview" alt="" />
-        </div>
-      </nz-carousel>
     </div>
-    <!-- content -->
-    <div class="w-full max-w-7xl m-auto mt-10">
-      <!-- Head -->
-      <div class="flex items-center justify-between">
-        <!-- Duration -->
-        <div class="flex items-center">
+  </nz-carousel>
+</div>
+<!-- content -->
+<div class="w-full max-w-7xl m-auto mt-10">
+  <!-- Head -->
+  <div class="flex items-center justify-between">
+    <!-- Duration -->
+    <div class="flex items-center">
           <fa-icon
             class="text-3xl text-primary mr-2"
             [icon]="faClock"
           ></fa-icon>
-          <div class="flex flex-col">
-            <span class="text-lg font-semibold">Duration</span>
+      <div class="flex flex-col">
+        <span class="text-lg font-semibold">Duration</span>
             <span class="text-globaltext">{{ tour.totalDays }}</span>
-          </div>
-        </div>
-        <!-- Max people -->
-        <div class="flex items-center">
+      </div>
+    </div>
+    <!-- Max people -->
+    <div class="flex items-center">
           <fa-icon
             class="text-3xl text-primary mr-2"
             [icon]="faUsers"
           ></fa-icon>
-          <div class="flex flex-col">
-            <span class="text-lg font-semibold">Max people</span>
+      <div class="flex flex-col">
+        <span class="text-lg font-semibold">Max people</span>
             <span class="text-globaltext">{{ tour.maxPeople }}</span>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <fa-icon class="text-3xl text-primary mr-2" [icon]="faUser"></fa-icon>
-          <div class="flex flex-col">
-            <span class="text-lg font-semibold">Min age</span>
-            <span class="text-globaltext">{{ tour.minAge }}</span>
-          </div>
-        </div>
-      </div>
-      <!-- Tabs -->
-      <div class="card-container mt-10 pb-10 w-[70%]">
-        <nz-tabset nzType="card">
-          <nz-tab nzTitle="DESCRIPTION">
-            <div class="flex flex-col">
-              <span class="font-semibold text-xl text-black pt-4"
-                >Overview</span
-              >
-              <span class="pt-4 text-lg">{{ tour.description }}</span>
-              <span class="font-semibold text-xl text-black pt-8"
-                >Included/Excluded</span
-              >
-              <div class="flex mt-4">
-                <div class="flex flex-col text-lg">
-                  <span class="flex items-center">
-                    <fa-icon class="text-green-400" [icon]="faCheck"></fa-icon>
-                    <span class="ml-1">Specialized bilingual guide</span>
-                  </span>
-                  <span class="flex items-center">
-                    <fa-icon class="text-green-400" [icon]="faCheck"></fa-icon>
-                    <span class="ml-1">Specialized bilingual guide</span>
-                  </span>
-                  <span class="flex items-center">
-                    <fa-icon class="text-green-400" [icon]="faCheck"></fa-icon>
-                    <span class="ml-1">Specialized bilingual guide</span>
-                  </span>
-                  <span class="flex items-center">
-                    <fa-icon class="text-green-400" [icon]="faCheck"></fa-icon>
-                    <span class="ml-1">Specialized bilingual guide</span>
-                  </span>
-                  <span class="flex items-center">
-                    <fa-icon class="text-green-400" [icon]="faCheck"></fa-icon>
-                    <span class="ml-1">Specialized bilingual guide</span>
-                  </span>
-                </div>
-                <div class="flex flex-col ml-10 text-lg">
-                  <span class="flex items-center">
-                    <fa-icon class="text-red-500" [icon]="faClose"></fa-icon>
-                    <span class="ml-1">Specialized bilingual guide</span>
-                  </span>
-                  <span class="flex items-center">
-                    <fa-icon class="text-red-500" [icon]="faClose"></fa-icon>
-                    <span class="ml-1">Specialized bilingual guide</span>
-                  </span>
-                  <span class="flex items-center">
-                    <fa-icon class="text-red-500" [icon]="faClose"></fa-icon>
-                    <span class="ml-1">Specialized bilingual guide</span>
-                  </span>
-                  <span class="flex items-center">
-                    <fa-icon class="text-red-500" [icon]="faClose"></fa-icon>
-                    <span class="ml-1">Specialized bilingual guide</span>
-                  </span>
-                  <span class="flex items-center">
-                    <fa-icon class="text-red-500" [icon]="faClose"></fa-icon>
-                    <span class="ml-1">Specialized bilingual guide</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </nz-tab>
-          <nz-tab nzTitle="TOUR PLAN">
-            <span>Content 2</span>
-          </nz-tab>
-          <nz-tab nzTitle="REVIEWS">
-            <ng-template nz-tab>
-              <span>Content 3</span>
-            </ng-template>
-          </nz-tab>
-        </nz-tabset>
       </div>
     </div>
+    <div class="flex items-center">
+      <fa-icon class="text-3xl text-primary mr-2" [icon]="faUser"></fa-icon>
+      <div class="flex flex-col">
+        <span class="text-lg font-semibold">Min age</span>
+            <span class="text-globaltext">{{ tour.minAge }}</span>
+      </div>
+    </div>
+  </div>
+  <!-- Tabs -->
+  <div class="card-container mt-10 pb-10 w-[70%]">
+    <nz-tabset nzType="card">
+      <nz-tab nzTitle="DESCRIPTION">
+        <div class="flex flex-col">
+              <span class="font-semibold text-xl text-black pt-4"
+                >Overview</span
+          >
+              <span class="pt-4 text-lg">{{ tour.description }}</span>
+          <span class="font-semibold text-xl text-black pt-8"
+            >Included/Excluded</span
+          >
+          <div class="flex mt-4">
+            <div class="flex flex-col text-lg">
+              <span class="flex items-center">
+                <fa-icon class="text-green-400" [icon]="faCheck"></fa-icon>
+                <span class="ml-1">Specialized bilingual guide</span>
+              </span>
+              <span class="flex items-center">
+                <fa-icon class="text-green-400" [icon]="faCheck"></fa-icon>
+                <span class="ml-1">Specialized bilingual guide</span>
+              </span>
+              <span class="flex items-center">
+                <fa-icon class="text-green-400" [icon]="faCheck"></fa-icon>
+                <span class="ml-1">Specialized bilingual guide</span>
+              </span>
+              <span class="flex items-center">
+                <fa-icon class="text-green-400" [icon]="faCheck"></fa-icon>
+                <span class="ml-1">Specialized bilingual guide</span>
+              </span>
+              <span class="flex items-center">
+                <fa-icon class="text-green-400" [icon]="faCheck"></fa-icon>
+                <span class="ml-1">Specialized bilingual guide</span>
+              </span>
+            </div>
+            <div class="flex flex-col ml-10 text-lg">
+              <span class="flex items-center">
+                <fa-icon class="text-red-500" [icon]="faClose"></fa-icon>
+                <span class="ml-1">Specialized bilingual guide</span>
+              </span>
+              <span class="flex items-center">
+                <fa-icon class="text-red-500" [icon]="faClose"></fa-icon>
+                <span class="ml-1">Specialized bilingual guide</span>
+              </span>
+              <span class="flex items-center">
+                <fa-icon class="text-red-500" [icon]="faClose"></fa-icon>
+                <span class="ml-1">Specialized bilingual guide</span>
+              </span>
+              <span class="flex items-center">
+                <fa-icon class="text-red-500" [icon]="faClose"></fa-icon>
+                <span class="ml-1">Specialized bilingual guide</span>
+              </span>
+              <span class="flex items-center">
+                <fa-icon class="text-red-500" [icon]="faClose"></fa-icon>
+                <span class="ml-1">Specialized bilingual guide</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nz-tab>
+      <nz-tab nzTitle="TOUR PLAN">
+        <span>Content 2</span>
+      </nz-tab>
+      <nz-tab nzTitle="REVIEWS">
+        <ng-template nz-tab>
+          <span>Content 3</span>
+        </ng-template>
+      </nz-tab>
+    </nz-tabset>
+  </div>
+</div>
   </section>
   <!-- Carousel -->
 </ng-container>
